@@ -1,4 +1,4 @@
-div{ margin: auto; display: table; position: relative;}
+div{ margin: auto; display: table;}
 .mainnav li{
     background-color: rgb(39, 39, 39);
     text-decoration: none;
@@ -33,5 +33,5 @@ div{ margin: auto; display: table; position: relative;}
 }
 @font-face {
     font-family:"DressedlessPro" ;
-    src: url("C:/Users/DubleRay/Desktop/Программирование/Anicode1/Fonts/BarcadeBrawlRegular.ttf");
+    src: url("/Fonts/BarcadeBrawlRegular.ttf");
 }
