@@ -22,12 +22,28 @@ div{ margin: auto; display: table;}
     padding: 11px;
     text-decoration: none;
 }
-.mainnav a:hover { background-color: rgb(136, 136, 136);}
+a:hover { background-color: rgb(136, 136, 136);}
+.waifu:hover{ background-color:rgb(136, 136, 136);}
 .mainnav li:hover { background-color: rgb(136, 136, 136);}
-.mainnav a:visited { color: white;}
- .mainnav a{ color: white; text-decoration: none;}
+a:visited { color: white;}
+a{ color: white; text-decoration: none;}
  details{ color: white; text-decoration: none;}
-.basement{
+
+
+.sidebar{
+    background-color: rgb(39, 39, 39);
+     float: left;
+     padding: 20px;
+    width:150px;
+    color: white;
+    font-family:"DressedlessPro";
+    text-align: center;
+}
+.waifu{ padding: 10px; display: grid;}
+.mainbody{ margin-left: 170px;}
+
+
+ .basement{
     text-align: center;
     clear: both;
 }
