@@ -1,3 +1,15 @@
+*{box-sizing: border-box;}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.заголовок{ font-family:"Заголовок"; font-size: 110px; clear: both; margin-bottom: -1%;}
 div{ margin: auto; display: table;}
 .mainnav li{
     background-color: rgb(39, 39, 39);
@@ -7,10 +19,10 @@ div{ margin: auto; display: table;}
     position: relative;
     font-family:"DressedlessPro";
 }
-.Mainmenu{padding: 11px; background-color: rgb(82, 82, 82); }
+.Mainmenu{padding: 11px; background-color: rgb(82, 82, 82); border-radius: 5px 0px 0px 5px;}
 .Ongoings{padding: 11px; background-color: rgb(65, 65, 65); }
 .Сharacters{padding: 11px; background-color: rgb(44, 44, 44); }
-.Lists{padding: 11px; background-color: rgb(24, 24, 24); }
+.Lists{padding: 11px; background-color: rgb(24, 24, 24); border-radius: 0px 5px 5px 0px;}
 .titles a{padding: 11px;}
 .titles ul{
     padding: 11px;
@@ -23,7 +35,8 @@ div{ margin: auto; display: table;}
     text-decoration: none;
 }
 a:hover { background-color: rgb(136, 136, 136);}
-.waifu:hover{ background-color:rgb(136, 136, 136);}
+.waifu:hover>.sidedescription{ display:flex;}
+a .waifu{border: 20px; border-radius: 5px; border-color: red;}
 .mainnav li:hover { background-color: rgb(136, 136, 136);}
 a:visited { color: white;}
 a{ color: white; text-decoration: none;}
@@ -38,10 +51,26 @@ a{ color: white; text-decoration: none;}
     color: white;
     font-family:"DressedlessPro";
     text-align: center;
+    border-radius: 10px;
+    border: 10px; border-radius: 5px; border-color: red;
 }
+
+.sidedescription{
+    position: absolute;
+    display: none;
+    background-color: rgba(48, 48, 48, 0.6);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 11px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 21px;
+}
+
 .waifu{ padding: 10px; display: grid;}
 .mainbody{ margin-left: 170px;}
-
 
  .basement{
     text-align: center;
@@ -50,4 +79,8 @@ a{ color: white; text-decoration: none;}
 @font-face {
     font-family:"DressedlessPro" ;
     src: url("Fonts/BarcadeBrawlRegular.ttf");
+}
+@font-face {
+    font-family: "Заголовок";
+    src: url("Fonts/Sicretmonopersonalextlt.ttf");
 }
